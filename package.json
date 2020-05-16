@@ -1,0 +1,12 @@
+{
+  "name": "drawio-viewer",
+  "version": "0.0.1",
+  "description": "Preview the draw.io file on GitHub.",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
