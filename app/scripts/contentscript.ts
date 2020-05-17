@@ -1,3 +1,4 @@
+import ex from "../../app-src/shared/libs/drawio_v13.1.2_viewer.min.js"
 import { MessagePayload } from "../../app-src/shared/types/app"
 
 /**
@@ -11,5 +12,6 @@ chrome.runtime.onMessage.addListener((message: MessagePayload) => {
 })
 
 const execConvertToDrawio = (): void => {
+  console.log(ex)
   alert("Hello execConvertToDrawio")
 }

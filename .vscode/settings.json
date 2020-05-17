@@ -16,10 +16,12 @@
    * for webextension-toolbox
    */
   "search.exclude": {
-    "**/dist": true
+    "**/dist": true,
+    "**/app-src/shared/libs": true
   },
   "files.watcherExclude": {
-    "**/dist/*": true
+    "**/dist/*": true,
+    "**/app-src/shared/libs/*": true
   },
   /**
    * Extensions
@@ -35,9 +37,5 @@
     "typescript",
     "typescriptreact"
   ],
-  "cSpell.words": [
-    "contentscript",
-    "drawio",
-    "webextension"
-  ]
+  "cSpell.words": ["contentscript", "drawio", "webextension"]
 }
