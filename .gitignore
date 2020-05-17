@@ -123,3 +123,7 @@ packages/
 # Temp files
 .DS_Store
 Thumbs.db
+
+# auto generated files
+misc/*
+!misc/.gitkeep

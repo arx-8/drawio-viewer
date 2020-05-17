@@ -1,2 +1,2 @@
-const msg: string = "Hello chrome extension"
+const msg = "Hello chrome extension"
 console.log(msg)
