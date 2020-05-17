@@ -10,12 +10,17 @@
     "128": "images/icon-128.png"
   },
   "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
+    "scripts": ["scripts/background.js"]
   },
-  "permissions": [
-    "tabs",
-    "<all_urls>"
-  ]
+  "browser_action": {
+    "default_title": "Convert!"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["scripts/contentscript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["tabs", "https://github.com/*"]
 }
